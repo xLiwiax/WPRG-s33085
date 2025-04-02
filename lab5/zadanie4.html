@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadanie 4</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+        }
+        header {
+            display: flex;
+            justify-content: space-around;
+            background-color: #f0f0f0;
+            padding: 15px;
+        }
+        .nav {
+            display: flex;
+            width: 100%;
+            justify-content: space-around;
+        }
+        main {
+            display: flex;
+            flex: 1;
+            padding: 20px;
+        }
+        .sidebar {
+            width: 25%;
+            font-weight: bold;
+        }
+        .content {
+            display: grid;
+            width: 75%;
+            grid-template-columns: repeat(2, 150px) 1fr;
+            grid-template-rows: auto auto;
+            gap: 10px;
+            margin-left: 20px;
+        }
+        .box {
+            border: 1px solid #f0f0f0;;
+            padding: 10px 20px;
+        }
+        .info {
+            border: 1px solid #f0f0f0;;
+            padding: 10px 20px;
+            grid-row: span 2;
+        }
+        .full-width {
+            grid-column: span 2;
+        }
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #f0f0f0;
+            margin-top: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="nav">
+            <div>Strona główna</div>
+            <div>O nas</div>
+            <div>Kontakt</div>
+        </nav>
+    </header>
+    <main>
+        <div class="sidebar">
+            <h3>Witaj na naszej skomplikowanej stronie!</h3>
+        </div>
+        <div class="content">
+            <div class="box"><b>Funkcja 1</b><br>Opis funkcji 1...</div>
+            <div class="box"><b>Funkcja 2</b><br>Opis funkcji 2...</div>
+            <div class="info"><b>Dodatkowe informacje</b><br>...</div>
+            <div class="box full-width"><b>Funkcja 3</b><br>Opis funkcji 3...</div>
+        </div>
+    </main>
+    <footer>&copy; 2023 Skomplikowana strona z flexboxem. Wszelkie prawa zastrzeżone.</footer>
+</body>
+</html>
