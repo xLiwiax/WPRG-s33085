@@ -8,16 +8,16 @@
 <body>
     <?php
         function utTablice($a, $b, $c, $d) {
-            if ($c < $a) {
+            if ($b < $a) {
                 echo "BŁĄD: a < c <br>";
                 return;
             }
             $wynik = [];
 
-            for ($i = $a; $i <= $c; $i++) {
-                if ($i === $a) {
-                    $wynik[$i] = $b;
-                } elseif ($i === $c) {
+            for ($i = $a; $i <= $b; $i++) {
+                if ($i == $a) {
+                    $wynik[$i] = $c;
+                } elseif ($i == $b) {
                     $wynik[$i] = $d;
                 } else {
                     $wynik[$i] = 0;
